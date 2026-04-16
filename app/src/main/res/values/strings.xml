@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Glyph Decibel Meter</string>
+    <string name="start_meter">Start Meter</string>
+    <string name="stop_meter">Stop Meter</string>
+</resources>
