@@ -1,0 +1,28 @@
+# Android build artifacts
+.gradle/
+.idea/
+build/
+app/build/
+local.properties
+*.iml
+*.iws
+*.ipr
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Kotlin / Java
+*.class
+*.jar
+*.aar
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gradle wrapper (keep the jar and scripts, ignore downloaded distributions)
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!gradlew
+!gradlew.bat

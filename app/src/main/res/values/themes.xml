@@ -1,0 +1,9 @@
+<resources>
+    <!-- Base application theme. The Compose theme (GlyphDecibelMeterTheme) handles
+         all the real styling; this XML entry only provides a launch-screen
+         background so the window is black before Compose renders. -->
+    <style name="Theme.GlyphDecibelMeter" parent="android:Theme.Material.NoTitleBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>
