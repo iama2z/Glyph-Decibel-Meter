@@ -92,5 +92,8 @@ class MainActivity : ComponentActivity() {
         super.onStop()
         // Release the AudioRecord resource when the app goes to the background.
         audioCapture.release()
+        // Turn off all Glyph LEDs and release the controller so lights don't
+        // get stuck on after the app exits.
+        glyphController.release()
     }
 }

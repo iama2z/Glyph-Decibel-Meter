@@ -34,6 +34,6 @@ class StubGlyphController : GlyphController {
     }
 
     override fun release() {
-        Log.d(TAG, "Stub GlyphController released (no-op)")
+        Log.d(TAG, "Stub GlyphController released — all LEDs turned off (no-op on stub)")
     }
 }
