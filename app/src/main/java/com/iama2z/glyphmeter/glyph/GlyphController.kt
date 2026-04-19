@@ -37,8 +37,12 @@ interface GlyphController {
     fun update(zones: List<GlyphZoneState>)
 
     /**
-     * Release any resources held by this controller (e.g. SDK session).
-     * Call this when the app is stopping.
+     * Turn off all Glyph LEDs and release any resources held by this controller
+     * (e.g. SDK session).
+     *
+     * Implementations **must** switch all LEDs off before releasing the SDK session
+     * so that lights do not remain lit after the app exits.
+     * Call this when the app is stopping (e.g. in [android.app.Activity.onStop]).
      */
     fun release()
 }
