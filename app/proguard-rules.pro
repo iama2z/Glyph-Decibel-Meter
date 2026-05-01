@@ -4,3 +4,6 @@
 
 # Keep the app's own classes (not needed for debug builds)
 -keep class com.iama2z.glyphmeter.** { *; }
+
+# Keep Nothing Glyph SDK classes to prevent R8 from stripping them
+-keep class com.nothing.ketchum.** { *; }

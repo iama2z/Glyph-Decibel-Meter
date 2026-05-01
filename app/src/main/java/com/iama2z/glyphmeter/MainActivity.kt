@@ -98,5 +98,7 @@ class MainActivity : ComponentActivity() {
         super.onStop()
         // Release the AudioRecord resource when the app goes to the background.
         audioCapture.release()
+        // Release the Nothing Glyph SDK session to avoid resource leaks.
+        glyphController.release()
     }
 }
